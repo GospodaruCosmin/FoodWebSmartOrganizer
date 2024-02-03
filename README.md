@@ -23,6 +23,7 @@ Funcționalități:
 • Modificare aspect vizual al aplicației client.
 
 -	Microservicii:
+  
 Descriere: Aplicația user se folosește de microservicii pentru afișarea și livrarea de produse și rețete. Toate cererile sunt direcționate către un API-Gateway, care, în funcție de cerere, face un request către un microserviciu. Scalabilitatea este asigurată prin această arhitectură.
 Folosirea API-ului pus la dispoziție de cei de la SPOONACULAR.
 Pentru a obține funcționalitate completă în aplicația user, este necesară descărcarea librăriei dompdf și adăugarea folderului "dompdf" în folderul "app".
