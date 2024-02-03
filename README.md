@@ -4,6 +4,7 @@ Proiect FoSo (Food Web Smart Organizer) realizat de Sarghie Teodor și Gospodaru
 
 Email: foodapp4suport@gmail.com
 Scop: Ajutorarea utilizatorilor care au uitat parola contului. Un email automat pentru schimbarea parolei este trimis de la această adresă către utilizator.
+
 2. Părți ale Proiectului:
 
 User App (FoSo_framework):
