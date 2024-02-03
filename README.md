@@ -15,6 +15,7 @@ Export în format PDF (librărie utilizată: dompdf). Pentru funcționalitate co
 
 -	Admin App (FoSo_adminApp):
 Descriere: Aplicația utilizată de administratorii sistemului.
+
 Funcționalități:
 
 • Vizualizare listă de utilizatori (posibilitate de ștergere sau promovare la statut de administrator).
