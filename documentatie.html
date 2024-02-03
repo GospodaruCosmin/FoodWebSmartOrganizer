@@ -1,0 +1,168 @@
+<article>
+    <h2>Introduction</h2>
+    <h2>1.1 Purpose</h2>
+    <p>The software requirements specified in this document are for a web-based application designed to manage culinary
+        preferences and shopping lists. The scope of
+        this product includes all subsystems and features necessary for preference management, shopping list creation,
+        user management, data management, and data analysis. This SRS covers the entire system, including all functional
+        and non-functional requirements required to implement and maintain the software product.</p>
+</article>
+
+<article>
+    <h2>1.2 Product Scope</h2>
+    <p>
+        The specified software is a web application that manages the culinary preferences of individuals or groups. It
+        is based on a REST/GraphQL API and uses available data from Spoonacular. The application
+        offers support for managing multiple types of data such as categories, price, ingredients, images, allergies, nutritional values and more. 
+        In addition, the system offers support for creating shopping lists and managing users. Various statistics can be generated
+        and exported in open formats such as CSV and PDF. It also offers support for importing/exporting certain shopping lists between users in JSON format.
+    </p>
+    <p>
+        The main objective of this software is to provide a user-friendly platform for managing food-related data and
+        preferences. It aims to save the user's time and effort by providing an easy-to-use system. In addition, it
+        helps promote healthy eating and allows for better planning of meals.
+    </p>
+    <p>
+        From a corporate point of view, this software can be used for various business strategies. For example, it can
+        be utilized by food retailers to provide recommendations to customers acording to their
+        preferences. Nutritionists can also use it to manage the needs/requests of their clients. Overall, this software
+        can help organizations to offer better service to their customers.
+    </p>
+</article>
+
+<article>
+    <h2>2.1 Product Functions</h2>
+    <ul>
+        <li>Management of culinary preferences for individuals or groups.</li>
+        <li>Use of REST/GraphQL API and data from Spoonacular.</li>
+        <li>Managing multiple types of data such as categories, price, ingredients, images, allergies, nutritional values and more.</li>
+        <li>Support for creating shoppings lists, managing users and dynamically modify the website.</li>
+        <li>Customization of recommendations based on user preferences.</li>
+        <li>Generation of various statistics that can be exported in open formats such as CSV and PDF.</li>
+        <li>Offers step by step instructions for recipes</li>
+        <li>Easy-to-use user interface.</li>
+    </ul>
+</article>
+
+<article>
+    <h2>2.2 User Classes and Characteristics</h2>
+    <p>The anticipated user classes for this product include: </p>
+    <ul>
+        <li>Human user: These are individuals or groups who will use the application to manage their culinary
+            preferences, search for a specific food type or restaurant, create and manage shopping lists. They
+            are expected to have basic computer skills and be comfortable using web-based applications.
+        </li>
+        <li>Food retailers: These users will utilize the application to offer personalized recommendations to their
+            customers based on their preferences. This can be achieved very easily because of the OOP aproach. </li>
+        <li>Administrators: These users will be responsible for managing user accounts, security settings and other
+            administrative functions included in the software.</li>
+    </ul>
+</article>
+
+<article>
+    <h2>2.3 Operating Environment</h2>
+    <p>The software will operate in a web-based environment, accessible through standard web browsers such as Google
+        Chrome, Mozilla Firefox, or Microsoft Edge. It will require an internet connection to access external data
+        sources and APIs, as well as to enable user authentication and communication with the server. The software will
+        be designed to operate on various hardware platforms, including desktop and laptop computers, tablets, and
+        mobile devices, such as smartphones. It will support a range of operating systems, including Windows, MacOS, and
+        Linux, as well as mobile operating systems like iOS and Android. The software will rely on standard web
+        technologies such as HTML, CSS and JavaScript and PHP, MySQL.</p>
+</article>
+
+<article>
+    <h2>External Interface Requirements</h2>
+    <h2>3.1 User Interfaces</h2>
+    <p>The software product will have a web-based user interface accessible via standard web browsers. The inferface
+        will consists of several pages, including a home page, login page, register page, recipes page, invididual page 
+        for each recipe, products page, individual page for each product, favourites page, shopping list page. On the login 
+        page, the user will have to login using his credentials. In case he doesn't have an account, he can press the "Sign up" button
+        to navigate to the register page. This page will ask for standard information such as user's email, password,
+        full name and other data. The invididual page for each recipe will contain
+        important information regarding diet, ingredients, nutritional values and the instructions. For the product page will contain
+        a short description, some badges about the product and a list of ingredients. The main page will
+        include several recipes which are selected based on the user's preferences.
+        Standard buttons such as filter and sort options will be implemented to make it easier for the users. 
+        On the favourites page, the user can find his/her saved recipes/products. The user can choose either to remove them, either to see
+        the information. The interface will also respect standard web design guidelines, such as responsiveness to ensure easy access from various devices.
+    </p>
+</article>
+
+<article>
+    <h2>System Features</h2>
+    <h2>4.1 Database Management</h2>
+    <p>
+        All account credentials, user preferences, shopping list information will be stored using MariaDB/MySQL. This is a
+        popular open-source relational
+        database management system (RDBMS) that is used to store and manage data.
+    </p>
+</article>
+
+<article>
+    <h2>4.2 Login</h2>
+    <p>
+        This feature allows a user to authenticate themselves by providing valid login credentials such as username and
+        password. After a succesful authentication, the user gains access to their
+        personalized account and can perform various actions such as updating their preferences, create shopping lists,
+        search recipes.
+    </p>
+</article>
+
+<article>
+    <h2>4.3 Register</h2>
+    <p>
+        This feature allows a new user to create an account on the application by providing necessary details such as
+        name, email address, and a password. Upon successful registration, the user gains access to their personalized
+        account and can perform various actions such as updating their preferences and creating shopping lists.
+    </p>
+</article>
+
+<article>
+    <h2>4.4 Displaying recipes on the main page based on user's preferences</h2>
+    <p>
+        This feature, shows on the home page a list of popular recipes which the user may find interesting. 
+        The user can save the recipes for later use.
+    </p>
+</article>
+
+<article>
+    <h2>4.5 Shopping List</h2>
+    <p>
+        This feature allows a user to create a list of items they wish to purchase. The user can add or remove items
+        from the list as per their needs. The shopping list can be saved for future use in JSON format, 
+        and later used that JSON again to populate the shopping list.
+    </p>
+</article>
+<article>
+    <h2>4.6 Forgot password</h2>
+    <p>
+        This feature allows a user that forgot it's credentials to change their password. The users is redirected to a form that asks for
+        their e-mail addres. After that, the system sends an e-mail to that address with a link. The user presses that link and can insert
+        their new password.
+    </p>
+</article>
+<article>
+    <h2>4.7 Various Statistics</h2>
+    <p>
+        This feature allows the user to see different stats about his eating journey. The system provides statistics about nutritional values
+        that were consumed in the current day, last week, and last month. Also statistics about how many items the shopping list/favourite recipes/products 
+        the user has. The stats can be exported in a PDF format.
+    </p>
+</article>
+
+<article>
+    <h2>Other Nonfunctional Requirements</h2>
+    <h2>5.1 Security Requirements</h2>
+    <p>
+        For our product, we will be using HTTPS to ensure secure communication between the user's web browser and the
+        server when they are accessing and transmitting sensitive information such as login credentials, user data. 
+        HTTPS ensures that this information is encrypted during transmission and makes it much more
+        difficult for third parties to intercept or steal it. Passwords will be hashed, and actions against SQL Injection were taken.
+        We will also be using SSL to authenticate the identity of
+        our server to users and to prevent man-in-the-middle attacks.
+    </p>
+    <p>
+        SSL (Secure Sockets Layer) is a protocol that ensures secure communication between two endpoints over the
+        internet. It provides secure data transfer, encryption, and authentication between clients and servers.
+    </p>
+</article>
