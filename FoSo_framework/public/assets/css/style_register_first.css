@@ -1,0 +1,136 @@
+body {
+    background-color: #f7f7ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1,
+h2,
+p,
+span,
+i {
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    color: #c8553d;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo img {
+    width: 7%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a{
+    text-decoration: underline;
+    color:#c8553d;
+    cursor: pointer;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.flname {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .content {
+        margin-top: 30%;
+    }
+
+}
+
+.form input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f2f2;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+.form::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: url("FoSo_framework\public\assets\img\background.jpg"); */
+    background-size: cover;
+ 
+}
+
+.form button[type="submit"]{
+    width: 99%;
+    padding: 16px;
+    border-radius: 3px;
+    border: none;
+    background: #f2f2f2;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    background: #c8553d;
+    color: #f7f7ff;
+}
+
+.form button[type="submit"]:hover {
+    background: #b34c37;
+}
+@media only screen and (max-width: 600px) {
+    .flname{
+        flex-direction: column;
+    }
+    .name{
+        width:100%
+    }
+}

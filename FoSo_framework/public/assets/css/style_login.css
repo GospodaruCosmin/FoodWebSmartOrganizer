@@ -1,0 +1,106 @@
+body{
+    background-color: #f7f7ff;
+    overflow: hidden;
+}
+h1,h2,p,span,i, input[type="checkbox"]{
+    font-family: 'Poppins', sans-serif;
+}
+span{
+    color: #c8553d;
+}
+.contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-pic{
+    /*max-height: 98vh;*/
+    max-width:32% ;
+    border-radius: 12px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+}
+.login-form input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #f2f2f2;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.login-form input[type="submit"]{
+    padding: 10px;
+    background-color: #c8553d;
+    border: 2px solid #c8553d;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.login-form input[type="submit"]:hover {
+    background-color: #f7f7ff;
+    border: 2px solid #c8553d;
+    color:#c8553d;
+}
+.wrong-user-pass{
+    color:#c8553d;
+}
+.logo-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.logo{
+    width: 10%;
+    float: right;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formular{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+.remember{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+}
+.forgot-password{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.sign-up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: last baseline;
+}
+.sign-up h2{
+    cursor: pointer;
+}
+.sign-up h2:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 900px) {
+.left-pic{
+    display: none;
+}
+
+}
